@@ -3,16 +3,16 @@ body{
   flex-direction: column;
   align-items: center;
 }
-.parent-container{
+
+.grid-container{
   display: flex;
-  align-items: center;
-  width: 950px;
-  height: 950px;
+  flex-direction: column;
+  padding:15px;
+  width: 900px;
+  height: 900px;
   border: 4px solid blue;
 }
-.part-of-grid{
-  border:1px solid black;
-}
+
 .user-selection{
   margin: 15px;
   width:30%;
@@ -32,6 +32,7 @@ button:first-of-type{
   border-radius: 15px;
   width:40%;
 }
+
 button:first-of-type:hover{
   transition-duration:0.45s;
   background-color: white;
@@ -47,6 +48,7 @@ button:last-of-type{
   border-radius: 15px;
   width:40%;
 }
+
 button:last-of-type:hover{
   transition-duration:0.45s;
   background-color: white;
@@ -54,15 +56,17 @@ button:last-of-type:hover{
   border: solid 4px #ff9999;
 }
 
+.grid-row{
+  display: inline-flex;
+  border:0.25px #e6e6ff solid;
+  width: 100%;
+  height: 100%;
+}
 
-
-
-
-
-
-
-
-
+.div-inside-row{
+  flex-basis: 100%;
+  border:0.5px #e6e6ff solid;
+}
 
 /*SLIDER CSS COPIED FROM W3SCHOOLS*/
 .slider {
